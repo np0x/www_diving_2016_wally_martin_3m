@@ -1,0 +1,14 @@
+# Base configs
+baseurl: ""
+url: "http://wallymartin-2016.druidhillroad.com"
+image_fulls_loc: "./images/fulls"
+image_thumbs_loc: "./images/thumbs"
+#google_analytics: "UA-UACODE-HERE"
+
+# UI configs
+title: "Wally Martin 3m Invitational 2016"
+subtitle: "July, 2016"
+author: "Noah Paci"
+publicise: "Diving Photos"
+
+exclude: [README.md, package.json, npmfile.js, gulpfile.js, Gemfile, Gemfile.lock, LICENSE, node_modules]

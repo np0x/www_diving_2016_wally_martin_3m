@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><strong>{{ site.title }}</strong></h1>
+        <nav>
+            <ul>
+                <li><a href="#footer" class="icon fa-info-circle">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        {% for image in site.static_files %}
+        {% if image.path contains 'fulls' %}
+        <article class="thumb">
+            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+                     data-name="{{ image.name }}"/></a>
+            <!--<h2></h2>
+            <p></p>-->
+        </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="panel">
+        <div class="inner split">
+            <div style="width: 175px"><img src="assets/sce_logo.png"/></div>
+            <div>
+                <section>
+                    <h2>Get in touch</h2>
+                    by email: <a href="mailto:npaci@druidhillroad.com">npaci@druidhillroad.com</a><br/>
+                    <p>{{ site.publicise }}</p>
+                    <p class="copyright">
+                        &copy; {{ site.author }}
+                    </p></section>
+
+            </div>
+
+
+        </div>
+    </footer>
+</div>

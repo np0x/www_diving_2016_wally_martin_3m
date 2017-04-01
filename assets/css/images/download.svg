@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" zoomAndPan="disable">
+	<style>
+		line {
+			stroke: #000;
+			stroke-width: 4px;
+		}
+	</style>
+	<!--
+	bottom line is at 60
+	32 pixels up from 60 == 28
+	center is 35
+	-->
+	<line x1="20" y1="44" x2="20" y2="63"/>
+	<line x1="51" y1="44" x2="51" y2="63" />
+	<line x1="19" y1="63" x2="51" y2="63"/>
+
+	<line x1="35" y1="56" x2="35" y2="22"/>   <!-- main body of arrow -->
+	<line x1="35" y1="55" x2="26" y2="43"/>   <!-- left side of arrow -->
+	<line x1="35" y1="55" x2="44" y2="43"/>   <!-- right side of arrow -->
+</svg>
